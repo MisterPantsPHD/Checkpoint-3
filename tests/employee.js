@@ -1,3 +1,6 @@
+// Test Plan: https://docs.google.com/document/d/1Fs3pzWFceq_mAQhzwAzqiCm2ufa7FzHkBHqNDAuJqog/edit?usp=sharing
+// Project Board: https://trello.com/b/z8n7MPdD/employee-manager-v2
+
 var eObjects = {}
 let eAssets = require('../pageAssets/employeeAssets')
 

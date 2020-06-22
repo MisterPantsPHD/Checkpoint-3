@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "edb1bdf6-68d1-4016-bbc5-08c9aa6744be",
+		"name": "Employee Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Susan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"765\",\r\n        \"name\": \"Susan Furrabrusin\",\r\n        \"phone\": \"4206980085\",\r\n        \"email\": \"sfbrusin@gmail.com\",\r\n        \"title\": \"HR Director\"\r\n        \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Susan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/765",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"765"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Susan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees?search=Susan",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Susan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Susan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/765?id=765&name=Susan Furrabrusin&phone=8008542069&email=sfbrusin@gmail.com&title=HR Director",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"765"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "765"
+						},
+						{
+							"key": "name",
+							"value": "Susan Furrabrusin"
+						},
+						{
+							"key": "phone",
+							"value": "8008542069"
+						},
+						{
+							"key": "email",
+							"value": "sfbrusin@gmail.com"
+						},
+						{
+							"key": "title",
+							"value": "HR Director"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
